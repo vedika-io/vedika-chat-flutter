@@ -1,0 +1,39 @@
+name: vedika_chat
+description: >
+  Vedika chat Flutter wrapper. Hosts the published Vedika chat bundle in a
+  native WebView (webview_flutter), loaded from the network so chat updates
+  need no app release, and forwards credentials through a
+  tokenProvider. Headless network streaming is not part of this package:
+  the streamed wire runs inside the bundle, which is owned by the Vedika
+  chat kit.
+version: 0.1.0
+
+repository: https://github.com/vedika-io/vedika-chat-flutter
+homepage: https://vedika.io
+issue_tracker: https://github.com/vedika-io/vedika-community/issues
+
+topics:
+  - chat
+  - widget
+  - webview
+  - ai
+  - vedika
+
+environment:
+  sdk: ^3.10.7
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.10.0
+  meta: ^1.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Test-only: lets widget tests install a fake WebViewPlatform.
+  webview_flutter_platform_interface: ^2.10.0
+
+flutter:
