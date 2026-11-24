@@ -1,5 +1,8 @@
 # Unreleased
 
+- Minimum toolchain is now Dart 3.8 and Flutter 3.32. The old floor was
+  contradictory: Flutter 3.10 ships Dart 3.0, which cannot satisfy
+  `sdk: ^3.10.7`. The example app's iOS deployment target is now 15.0.
 - Hosted by default: `VedikaChatConfig.loaderUrl` is now optional and
   defaults to the published loader (`kDefaultLoaderUrl`). The doc comment
   already promised this; the parameter used to be required. A bundled
